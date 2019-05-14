@@ -44,3 +44,16 @@ On multiple visits to a website, the session somehow gets preserved.
 <br/>
 MySQL does caching for identically executed queries (which happens when a user is navigating in a website)
 
+## CAP
+<br/>
+http://ksat.me/a-plain-english-introduction-to-cap-theorem/
+<br/>
+some good reads
+<br/>
+https://www.quora.com/What-are-Master-and-Slave-databases-and-how-does-pairing-them-make-web-apps-faster
+<br/>
+https://medium.com/@Pinterest_Engineering/sharding-pinterest-how-we-scaled-our-mysql%20-fleet-3f341e96ca6f
+<br/>
+https://en.wikipedia.org/wiki/Paxos_(computer_science)
+<br/>
+http://ksat.me/a-plain-english-introduction-to-cap-theorem/

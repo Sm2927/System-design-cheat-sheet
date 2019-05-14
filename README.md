@@ -36,3 +36,8 @@ approaches - striping and redundnacy
 (necessary concerns - *scalabilty*, *versatility*, *economic*, *response time* )
 <br/>
 
+## Sticky sessions
+<br/>
+On multiple visits to a website, the session somehow gets preserved.
+<br/>
+MySQL does caching for identically executed queries (which happens when a user is navigating in a website)

@@ -10,6 +10,8 @@ source: https://www.youtube.com/watch?v=-W9F__D3oY4
 
 CLIENT -----(sends request)----- DNS Server (host name to IP address)
 <br/>
+https://stackoverflow.com/questions/11707879/difference-between-scaling-horizontally-and-vertically-for-databases
+<br/>
 for horizontal scaling, we need a load balancer- that is a fancy DNS Server which follows a certain algorithm like *Round Robin* to distribute load among the servers or we can have dedicated servers where say, one server dedicated to all html requests and another server handles multimedia like images, gifs, etc
 
 <br/>
@@ -41,3 +43,4 @@ approaches - striping and redundnacy
 On multiple visits to a website, the session somehow gets preserved.
 <br/>
 MySQL does caching for identically executed queries (which happens when a user is navigating in a website)
+

@@ -28,9 +28,7 @@ for horizontal scaling, we need a load balancer- that is a fancy DNS Server whic
 
 ## RAID - Redundant Array of Independent Disks
 <br/>
-approaches - *striping* 
-            <br/>
-              *redundnacy* 
+approaches - striping and redundnacy
 <br/>
 
 *(**preferably throwing redundnacy to the confines of a single server**)*

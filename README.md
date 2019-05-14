@@ -56,4 +56,4 @@ https://medium.com/@Pinterest_Engineering/sharding-pinterest-how-we-scaled-our-m
 <br/>
 https://en.wikipedia.org/wiki/Paxos_(computer_science)
 <br/>
-http://ksat.me/a-plain-english-introduction-to-cap-theorem/
+

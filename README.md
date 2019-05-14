@@ -14,3 +14,7 @@ for horizontal scaling, we need a load balancer- that is a fancy DNS Server whic
 
 <br/>
 **Caching** and **Time-to-live**
+**Log-in sessions**- storing session data in external hard drives, like a database or a file server, for users so that the servers can share states. 
+*drawback*- what if the file server fails?
+*solution* - **RAID**
+## RAID - Redundant Array of Independent Disks

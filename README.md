@@ -48,9 +48,12 @@ MySQL does caching for identically executed queries (which happens when a user i
 <br/>
 CAP theorem states that : while desigining a distributed system, it is impossible to achieve all 3 objectives namely, consistency, availability and tolerance, simultaneously.
 <br/>
-- consistency - updated information is available almost as soon as it is updated
-- availability - always available for the clients
-- partition tolerance - working doesn't stop in case of a communication loss
+1. consistency - updated information is available almost as soon as it is updated
+<br/>
+2. availability - always available for the clients
+<br/>
+3. partition tolerance - working doesn't stop in case of a communication loss
+<br/>
 http://ksat.me/a-plain-english-introduction-to-cap-theorem/
 <br/>
 some good reads

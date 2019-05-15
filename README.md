@@ -65,5 +65,6 @@ https://medium.com/@Pinterest_Engineering/sharding-pinterest-how-we-scaled-our-m
 https://en.wikipedia.org/wiki/Paxos_(computer_science)
 <br/>
 ## Sharding
+<br/>
 Sharding is a method of splitting and storing a single logical dataset in multiple databases. By distributing the data among multiple machines, a cluster of database systems can store larger dataset and handle additional requests. Sharding is necessary if a dataset is too large to be stored in a single database.
 <br/>

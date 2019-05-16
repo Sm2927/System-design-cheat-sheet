@@ -78,4 +78,18 @@ Sharding is a method of splitting and storing a single logical dataset in multip
 
 (memory cache)-powerful technique-used by fb for years- stores in RAM-implemented in many languages-used since responses from cache requests are faster than that from database queries
 <br/>
-facebook is more read heavy(than write heavy) as more than 10-20 updates can show on our newsfeed in a minute (which are actually some sort of queries), coz it is unlikely for us to update our own status (write into it) around 10-20 times in the same time (a minute) 
+facebook is more read heavy(than write heavy) as more than 10-20 updates can show on our newsfeed in a minute (which are actually some sort of queries), coz it is unlikely for us to update our own status (write into it) around 10-20 times in the same time (a minute).  
+Hence, facebook prefers using memcache (that involves just a look up in the cache or memory), rather than executing heavy database queries. (facebook is dealing with billions of users, scanning the entire database is very costly).
+<br/>
+
+
+## Replication - the concept of master-slave
+
+automatic copies of data in the master is generated in the slaves.
+adavntages- ensures backup (master dies- promote a slave to a master-make necessary reconfigurations-it works!), can be used for load balancing, especially for read heavy websites like facebook, select queries can go to slaves for writing, whereas insert, upadte and delete deal with the master (we can have more servers to lighten the load further).
+
+All in all, we have spare and read requests are balanced.
+*we can have master-master paradigm too, in which we have 2 masters and write in either of them, and the code gets replicated in the other.*
+<br/>
+
+

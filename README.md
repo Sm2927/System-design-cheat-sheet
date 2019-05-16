@@ -100,7 +100,12 @@ All in all, we have spare and read requests are balanced.
 In the above diagram, we see 2 major bottlenecks (receive from more than one sources and relay to more than one destinations) , that are the load balancers. If one of these die, all will come to a standstill. So, we need more load balancers for replication(master-master/master-slave) to ensure no abrupt termination occurs. We can also go for partitioning of servers. Facebook used this method. MIT users were alloted a set of servers and so were users of Harvard. *(If there is required to be connection between MIT and Harvard users, separate cross-linking was required, this was a major drawback.)*
 
 <br/>
-**High availability (HA)** is a characteristic of a system, which aims to ensure an agreed level of operational performance, usually uptime, for a higher than normal period.
+
+
+
+
+**High availability (HA)**
+is a characteristic of a system, which aims to ensure an agreed level of operational performance, usually uptime, for a higher than normal period.
 <br/>
 Mostly, this is done by two systems checking each others' heartbeats and if one dies, the other takes over.
 <br/>
@@ -121,5 +126,23 @@ Controlling the type of traffic flow in the topology.
 In a scenario, traffic from outer world to the load balancer is restricted to tcp 80 , encrypted http protocols(443) or VPNs. From load balancers to servers, we are concerned with unencrypted data, so just tcp 80 comes to picture. As for servers to databases, we take tcp 3306 that mysql uses as port number by default.
 
 Firewalling capabilities require the various kinds of hardwares, like switches, etc.
+
+
+
+## Domain Name System
+
+
+Domain name (www.google.com) -----translated by DNS----->  IP Address(173.194.115.96)
+<br/>
+disadvantages-
+<br/>
+1. introduces delay if no proper caching
+<br/>
+2. managed by larger organizations like ISPs, large companies or the govt.
+<br/>
+3. prone to DDoS attack (users of twitter couldn't access it if its ip address isn't known)
+<br/>
+
+
 
 

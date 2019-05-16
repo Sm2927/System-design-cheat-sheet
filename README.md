@@ -2,7 +2,7 @@
 work to record my progress in the arena of system design
 
 
-
+have a look at the repo: https://github.com/Sm2927/system-design-primer#system-design-topics-start-here 
 ## Workflow
 source: https://www.youtube.com/watch?v=-W9F__D3oY4
 <br/>

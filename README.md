@@ -92,4 +92,4 @@ All in all, we have spare and read requests are balanced.
 *we can have master-master paradigm too, in which we have 2 masters and write in either of them, and the code gets replicated in the other.*
 <br/>
 
-
+![](topo.png)

@@ -42,7 +42,7 @@ approaches - striping and redundnacy
 <br/>
 On multiple visits to a website, the session somehow gets preserved.
 <br/>
-MySQL does caching for identically executed queries (which happens when a user is navigating in a website)
+MySQL does caching for identically executed queries (which happens when a user is navigating in a website)- can be done with the help of cookies
 
 ## CAP
 <br/>
@@ -93,3 +93,24 @@ All in all, we have spare and read requests are balanced.
 <br/>
 
 ![](topo.png)
+
+<br/>
+
+
+In the above diagram, we see 2 major bottlenecks (receive from more than one sources and relay to more than one destinations) , that are the load balancers. If one of these die, all will come to a standstill. So, we need more load balancers for replication(master-master/master-slave) to ensure no abrupt termination occurs. We can also go for partitioning of servers. Facebook used this method. MIT users were alloted a set of servers and so were users of Harvard. *(If there is required to be connection between MIT and Harvard users, separate cross-linking was required, this was a major drawback.)*
+
+<br/>
+**High availability (HA)** is a characteristic of a system, which aims to ensure an agreed level of operational performance, usually uptime, for a higher than normal period.
+<br/>
+Mostly, this is done by two systems checking each others' heartbeats and if one dies, the other takes over.
+<br/>
+
+
+
+## Network Redundancy
+(having separate data centres at different locations who do not share a common work space)
+Network redundancy is a process through which additional or alternate instances of network devices, equipment and communication mediums are installed within network infrastructure. It is a method for ensuring network availability in case of a network device or path failure and unavailability.
+
+**an example :** Suppose my IP has been cached to a particular data center for say, Amazon, and it goes dysfunctional for some calamity or other issue. Due to caching, I am routed to that centre but no operation could take place as the data centre is out of power. And I will have to wait till the TTL for my IP expires and I am routed to some other centre with proper supply. 
+
+

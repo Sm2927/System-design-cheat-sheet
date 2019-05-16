@@ -72,3 +72,10 @@ https://en.wikipedia.org/wiki/Paxos_(computer_science)
 <br/>
 Sharding is a method of splitting and storing a single logical dataset in multiple databases. By distributing the data among multiple machines, a cluster of database systems can store larger dataset and handle additional requests. Sharding is necessary if a dataset is too large to be stored in a single database.
 <br/>
+
+
+## memcache
+
+(memory cache)-powerful technique-used by fb for years- stores in RAM-implemented in many languages-used since responses from cache requests are faster than that from database queries
+<br/>
+facebook is more read heavy(than write heavy) as more than 10-20 updates can show on our newsfeed in a minute (which are actually some sort of queries), coz it is unlikely for us to update our own status (write into it) around 10-20 times in the same time (a minute) 

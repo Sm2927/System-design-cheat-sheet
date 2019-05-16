@@ -105,12 +105,21 @@ In the above diagram, we see 2 major bottlenecks (receive from more than one sou
 Mostly, this is done by two systems checking each others' heartbeats and if one dies, the other takes over.
 <br/>
 
-
+**We have to avoid single point of failures in the topology**
 
 ## Network Redundancy
 (having separate data centres at different locations who do not share a common work space)
 Network redundancy is a process through which additional or alternate instances of network devices, equipment and communication mediums are installed within network infrastructure. It is a method for ensuring network availability in case of a network device or path failure and unavailability.
 
 **an example :** Suppose my IP has been cached to a particular data center for say, Amazon, and it goes dysfunctional for some calamity or other issue. Due to caching, I am routed to that centre but no operation could take place as the data centre is out of power. And I will have to wait till the TTL for my IP expires and I am routed to some other centre with proper supply. 
+
+
+
+## Security
+
+Controlling the type of traffic flow in the topology.
+In a scenario, traffic from outer world to the load balancer is restricted to tcp 80 , encrypted http protocols(443) or VPNs. From load balancers to servers, we are concerned with unencrypted data, so just tcp 80 comes to picture. As for servers to databases, we take tcp 3306 that mysql uses as port number by default.
+
+Firewalling capabilities require the various kinds of hardwares, like switches, etc.
 
 

@@ -136,8 +136,7 @@ Domain name (www.google.com) -----translated by DNS----->  IP Address(173.194.11
 <br/>
 disadvantages-
 <br/>
-1. introduces delay if no proper caching
-<br/>
+1. introduces delay if there is no proper caching<br/>
 2. managed by larger organizations like ISPs, large companies or the govt.
 <br/>
 3. prone to DDoS attack (users of twitter couldn't access it if its ip address isn't known)
